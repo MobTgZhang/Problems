@@ -64,28 +64,16 @@
 					\lim\limits_{n\rightarrow\infty}x_{n}=0\nonumber
 				\end{equation}
 				并且$x_{n}\sim\frac{2}{n}(n\rightarrow+\infty)$
-			\item 求下列函数关于自变量$x$的导数:
-				\begin{enumerate}
-					\item $y=x^{x}$
-					\item $y=(\frac{x}{1+x})^{x}$
-					\item $y=\sqrt{x\sin{x}\cdot{1-e^{x}}}$
-					\item $y=a^{x}+x^{a}+x^{x}+a^{a}$
-				\end{enumerate}
-			\item 求下列函数的偏导数
-			\begin{enumerate}
-				\item $u=(\frac{x}{y})^{x}$
-				\item $u=x^{y^{z}}$
-				\item $z=(3x+2y-1)^{2x+3y}$
-				\item $z=\arctan{\frac{x^{2}}{y}}$
-			\end{enumerate}
-			
-			\item 设$f(x)$在点$x_{0}$处可导，并且$f{'}(x_{0})\neq{0}$,求下列的极限:
-			\begin{enumerate}
-				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}-h)-f(x_{0})}{h}$
-				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}+3h)-f(x_{0})}{h}$
-				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}+h)-f(x_{0}-h)}{h}$
-				\item $\lim\limits_{x\rightarrow{0}}\frac{x}{f(x_{0})-f(x_{0}+x)}$
-			\end{enumerate}
+			\item 设$f(x)$在点$x_{0}$处可导,$a_{n}<x_{0}<b_{n}$并且有$\lim\limits_{n\rightarrow\infty}a_{n}=\lim\limits_{n\rightarrow\infty}b_{n}=x_{0}$,证明:
+			\begin{equation}
+				\lim\limits_{n\rightarrow\infty}\frac{f(b_{n})-f(a_{n})}{b_{n}-a_{n}}=f{'}(x_{0})\nonumber
+			\end{equation}
+			\item 若可导函数$f(x)$对于一切$u,v$恒有
+			\begin{equation}
+				\frac{f(u)-f(v)}{u-v}=\alpha f{'}(u)+\beta f{'}(v)\nonumber
+			\end{equation}
+			成立,其中常数$\alpha,\beta>0$并且$\alpha+\beta=1$.求$f(x)$的表达式
+			\item 对于函数$F(x,y)$,如果存在常数$k$,使得对于任何$x,y$以及$t>0$恒有$F(tx,ty)=t^{k}F(x,y)$成立,则称$F(x,y)$是$k$次齐次多项式.证明:可微函数$F(x,y)$是$k$次齐次函数的充要条件为对于任何$x,y$恒有$xF_{1}{'}(x,y)+yF_{2}{'}(x,y)=kF(x,y)$成立.
 		\end{enumerate}
 	\end{flushleft}
 \end{document}
