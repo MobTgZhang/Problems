@@ -1,0 +1,91 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+
+% -- text font --
+% compile using Xelatex
+
+%\setmainfont{Microsoft YaHei}  % 微软雅黑
+%\setmainfont{YouYuan}  % 幼圆    
+%\setmainfont{NSimSun}  % 新宋体
+%\setmainfont{KaiTi}    % 楷体
+%\setmainfont{SimSun}   % 宋体
+%\setmainfont{SimHei}   % 黑体
+
+\usepackage{times}
+%\usepackage{mathpazo}
+%\usepackage{fourier}
+%\usepackage{charter}
+%\usepackage{helvet}
+
+\usepackage{amsmath, amsfonts, amssymb} % math equations, symbols
+\usepackage[english]{babel}
+\usepackage{color}      % color content
+\usepackage{graphicx}   % import figures
+\usepackage{url}        % hyperlinks
+\usepackage{bm}         % bold type for equations
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage{fancyhdr}   % 设置页眉、页脚
+%\pagestyle{fancy}
+\lhead{}
+\chead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\usepackage{hyperref}   % bookmarks
+\hypersetup{colorlinks, bookmarks, unicode} % unicode
+
+
+\title{每日数学练习}
+\author{ MobtgZhang \thanks{A programmer, who is devoting to python,go,c++,and author's e-mail is mobtgzhang@outlook.com} }
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\begin{flushleft}
+		\begin{enumerate}
+			\item 设
+				\begin{equation}
+				x_{1}\in(0,1),x_{n+1}=x_{n}(1-x_{n})(n=1,2,...) \nonumber
+				\end{equation}
+				证明:
+				\begin{equation}
+				\lim\limits_{n\rightarrow\infty}nx_{n}=1\nonumber
+				\end{equation}
+			\item 设$x_{1}=\sin x_{0}>0,x_{n+1}=\sin x_{n}(n=1,2,3,...)$,证明以下的结论:
+				\begin{enumerate}
+					\item $\lim\limits_{n\rightarrow\infty}x_{n}=0$
+					\item $\lim\limits_{n\rightarrow\infty}x_{n}\sqrt{\frac{n}{3}}=1$
+				\end{enumerate}
+			\item 设$x_{1}>0,x_{n+1}=\ln(1+x_{n})(n=1,2,3,...)$,证明
+				\begin{equation}
+					\lim\limits_{n\rightarrow\infty}x_{n}=0\nonumber
+				\end{equation}
+				并且$x_{n}\sim\frac{2}{n}(n\rightarrow+\infty)$
+			\item 求下列函数关于自变量$x$的导数:
+				\begin{enumerate}
+					\item $y=x^{x}$
+					\item $y=(\frac{x}{1+x})^{x}$
+					\item $y=\sqrt{x\sin{x}\cdot{1-e^{x}}}$
+					\item $y=a^{x}+x^{a}+x^{x}+a^{a}$
+				\end{enumerate}
+			\item 求下列函数的偏导数
+			\begin{enumerate}
+				\item $u=(\frac{x}{y})^{x}$
+				\item $u=x^{y^{z}}$
+				\item $z=(3x+2y-1)^{2x+3y}$
+				\item $z=\arctan{\frac{x^{2}}{y}}$
+			\end{enumerate}
+			
+			\item 设$f(x)$在点$x_{0}$处可导，并且$f{'}(x_{0})\neq{0}$,求下列的极限:
+			\begin{enumerate}
+				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}-h)-f(x_{0})}{h}$
+				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}+3h)-f(x_{0})}{h}$
+				\item $\lim\limits_{h\rightarrow\infty}\frac{f(x_{0}+h)-f(x_{0}-h)}{h}$
+				\item $\lim\limits_{x\rightarrow{0}}\frac{x}{f(x_{0})-f(x_{0}+x)}$
+			\end{enumerate}
+		\end{enumerate}
+	\end{flushleft}
+\end{document}
