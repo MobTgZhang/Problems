@@ -1,0 +1,63 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+\usepackage{times}
+\usepackage{amsmath, amsfonts, amssymb} % math equations, symbols
+\usepackage[english]{babel}
+\usepackage{color}      % color content
+\usepackage{graphicx}   % import figures
+\usepackage{url}        % hyperlinks
+\usepackage{bm}         % bold type for equations
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{fancyhdr}   % 设置页眉、页脚
+\lhead{}
+\chead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\usepackage{hyperref}   % bookmarks
+\hypersetup{colorlinks, bookmarks, unicode} % unicode
+\title{每日数学练习}
+\author{ MobtgZhang \thanks{A programmer, who is devoting to python,go,c++,and author's e-mail is mobtgzhang@outlook.com} }
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\begin{flushleft}
+		\begin{enumerate}
+			\item 计算下列不定积分
+			\begin{enumerate}
+				\item 
+				\begin{equation}
+					\int\frac{1}{1+x^{4}}dx \nonumber
+				\end{equation}
+				\item
+				\begin{equation}
+					\int\frac{dx}{x^{6}(x+1)}\nonumber
+				\end{equation}
+			\end{enumerate}
+			\item 求$\int{xf{'}(2x)}dx$,其中$f(x)$的原函数为$\frac{\sin{x}}{x}$.
+			\item 设
+				\begin{equation}
+					f(x)=\begin{cases}
+						1&,x<0\\
+						x+1&,0\leq{x}\leq{1}\\
+						2x&,x>1\\
+					\end{cases}\nonumber
+				\end{equation}
+				求$\int{f(x)}dx$
+			\item 设
+				\begin{equation}
+					f(x)=\frac{1}{1-x-x^{2}},a_{n}=\frac{f^{(n)}(0)}{n!}(n=0,1,2,...)\nonumber
+				\end{equation}
+				证明级数$\sum\limits_{n=0}^{\infty}\frac{a_{n+1}}{a_{n}a_{n+2}}$收敛，并求出其值.
+			\item 设$u_{1}=2,u_{n+1}=u_{n}^{2}-u_{n}+1(n=1,2,..)$.证明:$\sum\limits_{n=1}^{\infty}\frac{1}{u_{n}}=1$
+			\item 证明级数
+				\begin{equation}
+					\sum\limits_{n=1}^{\infty}\frac{1+\frac{1}{2}+...+\frac{1}{n}}{(n+1)(n+2)}\nonumber
+				\end{equation}
+				收敛并求出其和
+		\end{enumerate}
+	\end{flushleft}
+\end{document}
